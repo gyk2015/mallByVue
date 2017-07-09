@@ -1,6 +1,7 @@
 .home {
 	.swipe-img {
-		height: 200px;
+		height: 6rem;
+		margin-bottom: 0.5rem;
 		img {
 			height: 100%;
 			width: 100%;
@@ -11,7 +12,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 8%;
+		height: 2rem;
 		background: transparent;
 	}
 	.goods-list {
@@ -21,15 +22,20 @@
   		display: flex;
   		flex-direction: row;
   		justify-content: space-around;
-		.good-left {
-			width: 48%;
-			height: 20px;
-			border: 1px solid #000000;
-		}
-		.good-right {
-			width: 48%;
-			height: 20px;
-			border: 1px solid #000000;
+  		flex-wrap: wrap;
+		.goods-item {
+			width: 4.5rem;
+			height: 5rem;
+			background-color: #fff;
+			margin-bottom: 0.5rem;
+			.goods-item-img {
+				width: 100%;
+				height: 80%;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 	}
 }

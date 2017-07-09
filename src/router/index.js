@@ -15,7 +15,11 @@ export default new Router({
       		children:[{
       			path: '/',
       			name: 'home',
-      			component: home
+      			component: home,
+            meta: {
+              storeKey: 'home',
+              storeObj: require('../dash/home/store')
+            }
       		},{
             path: '/classification',
             name: 'classification',
